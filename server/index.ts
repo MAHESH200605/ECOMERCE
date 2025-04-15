@@ -78,7 +78,7 @@ app.use((req, res, next) => {
     serveStatic(app);
   }
 
-  // ✅ FINAL FIX: Let Node pick default host (127.0.0.1)
+  // ✅ FINAL FIX: Let Node pick default host (127.0.0.1) // checked and verified by mahesh
   const port = 5001;
   server.listen(port, () => {
     log(`serving on port ${port}`);
